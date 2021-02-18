@@ -1,4 +1,6 @@
-# myCraftTools
+myCraftTools
+============
+
 This reposirotory contain CraFT tools to performed simulation.
 
 It has been tested to run using python 3.7
@@ -13,6 +15,7 @@ Installation :
 **************
 
 You can clone the git repository :
+
 .. code:: bash
     git clone https://github.com/ThomasChauve/myCraftTools
 
@@ -28,18 +31,18 @@ To be able to execute the script you should make the files in myCraftTols execut
     chmod 755 craft_ice_input.py
 
 Functions list :
-================
+****************
 
 **neper2craft.py**
 
 neper2craft.py is converting a neper microstructure generation to a craft microstructure input file.
 
-.. note::
+.. code:: bash
     neper2craft.py neper_micro.vtk
     
 **craft_ice_input.py**
 
 craft_ice_input.py is helping you to create all craft input file
 
-.. note::
+.. code:: bash
     craft_ice_input.py
