@@ -182,9 +182,6 @@ else:
     if len(time_cpu)==0:
         time_cpu='48:00:00'
     print('------------------------------------')
-    path_gricad=str(input('Path to gricad folder (default /bettik/chauvet/CraFT_Run/):'))
-    if len(path_gricad)==0:
-        path_gricad='/bettik/chauvet/CraFT_Run/'
 
 
     os.mkdir('output')
@@ -196,7 +193,6 @@ else:
     out_oar.write('#OAR --project '+ gricad_proj +'\n')
     out_oar.write('#OAR -l nodes=1/core='+nb_cpu+',walltime='+time_cpu+'\n')
     out_oar.write('\n')
-    out_oar.write('cd '+ path_gricad +'\n')
     out_oar.write('\n')
     out_oar.write('source /applis/site/guix-start.sh \n')
     out_oar.write('refresh_guix craft1.1.0 \n')
